@@ -1,1 +1,65 @@
-# chat
+<html>
+<head>
+<title> Chat Box </title>
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet"
+ href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+ <link rel="stylesheet"
+ href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+
+</head>
+<body>
+<div class="container">
+<div class="msg-header">
+<div class="msg-header-img">
+<img src="img.jpg">
+</div>
+<div class="active">
+<h4> Liam </h4>
+<h6> 1 hour ago....</h6>
+</div>
+<div class="header-icons">
+	<i class="fa fa-phone"></i>
+	<i class="fa fa-video-camera"></i>
+	<i class="fa fa-info-circle"></i>
+</div>
+</div>
+
+<div class="chat-page">
+	<div class="msg-inbox">
+		<div class="chats">
+			<div class="msg-page">
+			
+			<div class="received-chats">
+			<div class="received-chats-img">
+				<img src="user2.jpg">
+			</div>
+			<div class="received-msg">		
+			<div class="received-msg-inbox">
+			<p> Hi !! This is message from Liam</p>				
+			<span class="time"> 11:01 PM | october 11 </span>
+			</div>
+			</div>
+			</div>
+			</div>
+			
+			<div class="outgoing-chats">
+			
+			<div class="outgoing-msg">		
+			
+			<p> Hi !! This is message from Liam</p>				
+			<span class="time"> 11:01 PM | october 11 </span>
+			</div>
+			</div>
+			<div class="outgoing-chats-img">
+				<img src="user2.jpg">
+			</div>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+</div> 
+
+</body>
+</html>
