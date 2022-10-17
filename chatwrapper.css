@@ -95,12 +95,11 @@ select {
 .chatbox-wrapper
 {
 	position: fixed;
-	bottom:25rem;
+	bottom:20rem;
 	right:10rem;
 	width:4rem;
 	height:4rem;
 }
-/*chatbox*/
 .chatbox-toggle
 {
 	width:100%;
@@ -133,4 +132,44 @@ select {
 	display:flex;
 	align-items:left;
 	justify-content:space-between;
+	background: var(--white);
+	padding:.75rem 1.5rem;
 }
+.chatbox-message-profile
+{
+	display: flex;
+	align-items:center;
+	grid-gap: .5rem;
+}
+.chatbox-message-image
+{
+	width: 3rem;
+	height: 3rem;
+	object-fit:cover;
+	border-radius:50%;
+}
+.chat-message-name
+{
+	font-size:1.125rem;
+	font-weight: 600;
+}
+.chat-message-status
+{
+	font-size:.875rem;
+	color:var(--grey-d-3);
+}
+.chatbox-message-dropdown-toggle
+{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	width: 2.5rem;
+	height:1.25rem;
+	font-size:1.25rem;
+	cursor:pointer;
+	border-radius: 50%;
+}
+
+
+
+/*chatbox*/
