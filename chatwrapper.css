@@ -40,6 +40,7 @@ body {
   font-family: 'poppins', sans-serif;
   background: linear-gradientr(90deg, var(--grey) 31px, transparent 1px) 50%, linear-gradient(180deg,var(--grey) 31px, var(--blue) 1px) 50%;
   background-size:32px 32px;
+  color: var(--dark);
 }
 
 /* A elements that don't have a class get default styles */
@@ -95,8 +96,8 @@ select {
 .chatbox-wrapper
 {
 	position: fixed;
-	bottom:20rem;
-	right:10rem;
+	bottom:10rem;
+	right:20rem;
 	width:4rem;
 	height:4rem;
 }
@@ -121,8 +122,8 @@ select {
 .chatbox-message-wrapper
 {
 	position: absolute;
-	bottom:calc(30% + 1rem);
-	right:0;
+	bottom:calc(100% + 1.5rem);
+	right:10;
 	width:200px;
 	border-radius:.5rem;
 	overflow:hidden;
@@ -130,9 +131,9 @@ select {
 .chatbox-message-header
 {
 	display:flex;
-	align-items:left;
+	align-items:right;
 	justify-content:space-between;
-	background: var(--white);
+	background: var(--grey);
 	padding:.75rem 1.5rem;
 }
 .chatbox-message-profile
@@ -158,17 +159,73 @@ select {
 	font-size:.875rem;
 	color:var(--grey-d-3);
 }
+.chatbox-message-dropdown
+{
+	position:relative;
+}
 .chatbox-message-dropdown-toggle
 {
 	display:flex;
 	justify-content:center;
 	align-items: center;
-	width: 2.5rem;
+	width: 8.5rem;
 	height:1.25rem;
 	font-size:1.25rem;
 	cursor:pointer;
 	border-radius: 50%;
 }
+.chatbox-message-dropdown-toggle:hover 
+{
+	background: var(--grey);
+}
+.chatbox-message-dropdown-menu 
+{
+	list-style:none;
+	margin:0;
+	position:absolute;
+	top:100%;
+	right:0;
+	background: var(--white);
+	padding:.5rem 0;
+	width:120px;
+	box-shadow: .25rem .25rem 1.5rem rgba(0, 0, 0, ,1);
+	transform:scale(0);
+	transition:.2s;
+}
+.chatbox-message-dropdown-menu a
+{
+	font-size: .875rem;
+	font-weight:500;
+	color:var(--dark);
+	text-decoration:none;
+	padding-top:.5rem 1rem;
+	display:block;
+}
+..chatbox-message-dropdown-menu a:hover
+{
+	background:var(--grey);
+}
+.chatbox-message-content
+{
+	background:var(--grey);
+	padding:1.5rem;
+	display:flex;
+	flex-direction:column;
+	grid-row-gap: 1rem;
+}
+.chatbox-message-item
+{
+	width:90%;
+	padding:.75rem;
+}
+.chatbox-message-item.sent
+{
+	align-self: flex-end;
+	background: var(--blue);
+	color: var(--white);
+}
+
+	
 
 
 
