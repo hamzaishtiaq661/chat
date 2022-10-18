@@ -1,0 +1,72 @@
+<style>
+body{
+overflow:scroll;
+}
+
+img {
+width:7%;
+margin:7px 10px;
+padding-left:30px;
+}
+
+nav {
+  float: right;
+  margin:35px 25px;
+  font-size:25px;
+  color:white;
+  
+}
+
+a:hover{
+background-color:lightgrey;
+}
+
+section {
+  float: left;
+  width: 20%;
+  height: 100px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 0px;
+  font-size:25px
+  box-border:1px solid gray;
+}
+
+article {
+  float: left;
+  padding: auto;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 500px; /* only for demonstration, should be removed */
+  border:none;
+}
+
+div {
+  float:left;
+  margin:15px 0px;
+  width: 199px;
+  padding:30px;
+  background-color: lightblue;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  overflow: scroll;
+}
+.ul{
+  float:left;
+  margin-bottom:90px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+
+}
+li {
+  position: relative;
+  padding-left: 30px;
+  height: 50px;
+  line-height: 50px;
+  margin: 5px;
+  border: 1px solid #aaa;
+ 
+}
+
+</style>
